@@ -1,0 +1,42 @@
+NAME
+    Email::Simple::Headers - Get a List of Headers From Simple Objects
+
+SYNOPSIS
+      use Email::Simple;
+      use Email::Simple::Headers;
+  
+      my $email = Email::Simple->new(<<'__MESSAGE__');
+      From: casey@geeknest.com
+      To: drain@example.com
+      Subject: Message in a bottle
+  
+      HELP!
+      __MESSAGE__
+  
+      print $email->header($_), "\n" for $email->headers;
+  
+DESCRIPTION
+    This software provides an instance method for Email::Simple to get a
+    list of headers.
+
+  Methods
+    headers
+           my @header_names = Email::Simple->headers;
+
+         This method returns the list of header names currently in the email
+         object. These names can be passed to the "header()" method
+         one-at-a-time to get header values. You are guaranteed to get a set
+         of headers that are unique. You are not guaranteed to get the
+         headers in any order at all.
+
+SEE ALSO
+    Email::Simple, perl.
+
+AUTHOR
+    Casey West, <casey@geeknest.com>.
+
+COPYRIGHT
+      Copyright (c) 2004 Casey West.  All rights reserved.
+      This module is free software; you can redistribute it and/or modify it
+      under the same terms as Perl itself.
+
