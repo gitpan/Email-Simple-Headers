@@ -1,3 +1,8 @@
+1.02    2006-07-11
+
+  - added a test to check that everything works with bodyless messages
+    (bug 13456); no problem found
+
 1.01    2004-07-30
 
   - Initial Version

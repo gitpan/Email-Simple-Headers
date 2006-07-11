@@ -2,7 +2,7 @@ package Email::Simple::Headers;
 use strict;
 
 use vars qw[$VERSION];
-$VERSION = sprintf "%d.%02d", split m/\./, (qw$Revision: 1.1 $)[1];
+$VERSION = '1.02';
 
 package Email::Simple;
 use strict;
